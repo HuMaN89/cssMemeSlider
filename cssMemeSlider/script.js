@@ -1,14 +1,13 @@
 const texts = {
-  img1: "1",
-  img2: "2",
-  img3: "3",
-  img4: "4",
-  img5: "5",
-  img6: "6",
-  img7: "7",
-  img8: "8",
-  img9: "9",
-  img10: "10",
+  img1: "Постоянство",
+  img2: "Взаимосвязь",
+  img3: "Pixel perfect",
+  img4: "Бахнет?",
+  img5: "Везде",
+  img6: "Професиональная династия",
+  img7: "Прокрастинация",
+  img8: "Продуманность",
+  img9: "Професиональный пользователь ПК",
 };
 
 const checkBoxs = document.querySelectorAll("input[type=radio]");
@@ -19,9 +18,9 @@ desc.innerHTML = texts.img1;
 checkBoxs.forEach((checkbox) => {
   checkbox.addEventListener("click", (e) => {
     console.log(e.target.id);
-    imgs.innerHTML = "";
     const newImg = document.createElement("img");
     newImg.src = `assets/${e.target.id}.png`;
+    imgs.innerHTML = "";
     imgs.append(newImg);
     desc.innerHTML = texts[e.target.id];
   });
