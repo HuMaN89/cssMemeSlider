@@ -28,7 +28,7 @@ body {
 .imgs img {
   max-width: 90%;
   object-fit: cover;
-  animation: show 2s ease 1s;
+  animation: show 1s ease;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -43,7 +43,6 @@ body {
   color: black;
   font-size: 1.2rem;
   line-height: 50px;
-  animation: show-text 0.1s ease;
   text-align: center;
   animation-fill-mode: forwards;
 }
@@ -81,6 +80,12 @@ input[type="radio"]:checked + label:before {
 label:hover {
   background: url(assets/circle2.png) 0 0 no-repeat;
   background-size: cover;
+}
+.show {
+  opacity: 0;
+  animation: show 1s ease;
+  text-align: center;
+  animation-fill-mode: forwards;
 }
 
 @keyframes show {

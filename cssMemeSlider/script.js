@@ -22,6 +22,6 @@ checkBoxs.forEach((checkbox) => {
     newImg.src = `assets/${e.target.id}.png`;
     imgs.innerHTML = "";
     imgs.append(newImg);
-    desc.innerHTML = texts[e.target.id];
+    desc.innerHTML = `<p class='show'> ${texts[e.target.id]}</p>`;
   });
 });
